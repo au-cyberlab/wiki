@@ -14,7 +14,7 @@ on it, and should you see a branch selection drop-down. Select the branch you
 wish to deploy (it must NOT be `main`), then press the green **Run workflow**
 button:
 
-![CyberLab deploy workflow](/images/deploy-branch.png)
+![CyberLab deploy workflow](../../images/deploy-branch.png)
 
 Within 8-12 minutes, the deploy workflow should complete. **Do NOT cancel a running deployment.**
 
@@ -26,7 +26,7 @@ Within 8-12 minutes, the deploy workflow should complete. **Do NOT cancel a runn
 
 Click on the workflow run you started.
 
-![CyberLab deploy workflow](/images/workflow-done.png)
+![CyberLab deploy workflow](../../images/workflow-done.png)
 
 At the bottom of the page are the **Cluster Artifacts**. Download them and unzip them. You should find the following files, where BRANCH is the name of the branch you deployed:
 
