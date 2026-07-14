@@ -20,7 +20,7 @@ markup:
   tableOfContents:
     startLevel: 1
   highlight:
-    style: base16-snazzy
+    noclasses: false
 
 # Multi-lingual mode config
 # There are different options to translate files
