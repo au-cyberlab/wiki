@@ -1,4 +1,5 @@
 ---
+title: Quickstart
 weight: 1
 ---
 
@@ -8,11 +9,7 @@ weight: 1
 
 Choose a [branch][1] to deploy. Each branch represents a description of a cyber range. If running for the first time, start with [`example`][2].
 
-Open the [CyberLab repository][3] and navigate to **Actions > Deploy dev
-AWS environment**. On the right, there should be a **Run workflow** drop-down. Click
-on it, and should you see a branch selection drop-down. Select the branch you
-wish to deploy (it must NOT be `main`), then press the green **Run workflow**
-button:
+Open the [CyberLab repository][3] and navigate to **Actions > Deploy dev AWS environment**. On the right, there should be a **Run workflow** drop-down. Click on it, and should you see a branch selection drop-down. Select the branch you wish to deploy (it must NOT be `main`), then press the green **Run workflow** button:
 
 ![CyberLab deploy workflow](../../images/deploy-branch.png)
 
