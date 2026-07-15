@@ -1,6 +1,6 @@
 ---
 title: What to deploy
-weight: 1
+weight: 2
 ---
 
 # What to deploy
