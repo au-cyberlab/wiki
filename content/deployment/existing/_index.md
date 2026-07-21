@@ -1,9 +1,10 @@
 ---
-title: What to deploy
+title: Existing systems
 weight: 2
+bookCollapseSection: true
 ---
 
-# What to deploy
+# Existing systems
 
 [Quickstart](../quickstart/) explains deployment of a pre-configured cyber range. If you want different systems, or different scenarios, you must create your own branch (from `main`).
 
@@ -29,7 +30,7 @@ Each supported system has a wiki page, each containing a "Setup" section. It wil
 
     These files may be found under `aws_infrastructure/infrastructure_configs/base_configs/`.
 
-    **Note:** To deploy *groups* of base configs, specify [lab configs](../how-to-deploy/lab-configs/).
+    **Note:** To deploy *groups* of base configs, specify [lab configs](../existing/lab-configs/).
 
 2. `ansible/playbooks/plays_to_run.yml`
 
@@ -45,7 +46,7 @@ Each supported system has a wiki page, each containing a "Setup" section. It wil
 
     These files may be found under `ansible/playbooks/`.
 
-    **Note:** To control the order of execution, use multiple [batches](../how-to-deploy/batches/). Playbooks run concurrently by default.
+    **Note:** To control the order of execution, use multiple [batches](../existing/batches/). Playbooks run concurrently by default.
 
 
 [1]: https://github.com/UAdelaide/CyberLab/blob/main/CONTRIBUTING.md

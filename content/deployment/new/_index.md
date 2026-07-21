@@ -1,7 +1,7 @@
 ---
-title: How to deploy
+title: New systems
 weight: 3
 bookCollapseSection: true
 ---
 
-# How to deploy
+# New systems
