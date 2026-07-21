@@ -8,7 +8,7 @@ weight: 1
 
 # Lab configs
 
-A *lab config* is a YAML file that describes a group of [base configs](../new/base-configs) (e.g. 2 hospitals + 3 power plants).
+A *lab config* is a YAML file that describes a group of [base configs](../new/base-configs) (e.g. 2 hospitals + 3 power plants). Lab configs reside in `aws_infrastructure/infrastructure_configs/`.
 
 A minimal example looks like this:
 
