@@ -4,7 +4,7 @@ weight: 1
 ---
 
 > [!CAUTION]
-> Only the last example in this wiki page works. [The others should, but they don't.](https://github.com/UAdelaide/CyberLab/issues/455)
+> **Bug:** Only the last example in this wiki page works. [The others should, but they don't.](https://github.com/UAdelaide/CyberLab/issues/455)
 
 # Lab configs
 

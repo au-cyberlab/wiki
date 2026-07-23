@@ -20,6 +20,7 @@ Each supported system has a wiki page, each containing a "Setup" section. It wil
     Each entry specifies a file describing a set of machines to deploy. Usually, this is a set of machines required to support a particular system.
 
     ```yml
+    backend: aws
     environments:
       folder: infrastructure_configs
       files:
