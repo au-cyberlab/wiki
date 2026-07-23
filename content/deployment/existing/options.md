@@ -37,7 +37,7 @@ If `aws_vpc` does not exist or no `name` is given, the default CyberLab AWS VPC 
 ```yml
 dns:
   deploy: true   # whether to deploy a DNS server
-  dnssec: false  # whether to configure DNSSEC
+  dnssec: false  # whether to configure DNSSEC and DNS-over-TLS
 ```
 
 Available DNS options, their default values, and their functions are described above.
