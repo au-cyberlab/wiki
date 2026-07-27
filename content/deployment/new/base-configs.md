@@ -9,6 +9,9 @@ A *base config* is a YAML file describing a set of machines for a particular sys
 
 Confusingly, base configs are used for more than just describing machines. Hence their unintuitive name.
 
+> [!IMPORTANT]
+> The `instances` block is required.
+
 ## 1. Machines
 
 Available options when describing a set of machines, as well as their functions, are described below.
@@ -40,7 +43,7 @@ The term "instances" to describe machines comes from AWS "EC2 instances". It is 
 
 A list of supported GPU models is available [here](https://docs.aws.amazon.com/ec2/latest/instancetypes/ac.html#ac_hardware) for AWS.
 
-Host variables (including the standard way of defining them) are described [later](#2-host-variables).
+Host variables (including the standard way of defining them) are described [later](#4-host-variables).
 
 ### 1.1 Machine names
 
@@ -81,6 +84,25 @@ A list of supported OS images is available [here](../../../backends/aws).
 
 Machines with other `instance_role`s will run the `BasicConfigurationScripts` instance script, and may be recognised and targeted by playbooks. For example, `server` is a value commonly recognised by system-specific playbooks. Unrecognised values result in no role-specific setup tasks being run.
 
-## 2. Host variables
+## 2. Edge router
+
+Your system's edge router is configured in the same way as a regular machine, but in a dedicated `EdgeRouter` block. You will probably not need this unless your project is networking-related (e.g. firewalls).
+
+Example:
+
+```yml
+EdgeRouter:
+  size: 20  # overrides default root disk size
+```
+
+Unlike regular machines, edge routers have `instance_role: EdgeRouter` set by default. Other defaults are consistent with regular machines.
+
+`type.aws` overrides are ignored.
+
+## 3. Environment variables
+
+// TODO!!
+
+## 4. Host variables
 
 // TODO!!

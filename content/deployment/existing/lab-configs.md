@@ -54,7 +54,6 @@ systems:
           instances:
             new_machine:
               size: 60
-              instance_type: t3.small
               ami: ami-096fd57f2d61eec65
               OS: Amazon2
               instance_role: server
