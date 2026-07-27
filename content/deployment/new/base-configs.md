@@ -76,8 +76,8 @@ A list of supported OS images is available [here](../../../backends/aws).
   - `KafkaHandler` - runs Kafka handler setup tasks
   - `Jumpbox` - runs `EnvJumpboxScripts` instance script
   - `MainJumpbox` - runs `MainJumpboxScripts` instance script
-  - `Master` - runs `kubernetesMasterScripts` instance script and Kubernetes master node setup tasks
-  - `Worker` - runs `kubernetesWorkerScripts` instance script and Kubernetes worker node setup tasks
+  - `Master` - runs Kubernetes master node setup tasks
+  - `Worker` - runs Kubernetes worker node setup tasks
 
 Machines with other `instance_role`s will run the `BasicConfigurationScripts` instance script, and may be recognised and targeted by playbooks. For example, `server` is a value commonly recognised by system-specific playbooks. Unrecognised values result in no role-specific setup tasks being run.
 

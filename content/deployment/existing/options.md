@@ -42,8 +42,7 @@ dns:
 
 Available DNS options, their default values, and their functions are described above.
 
-> [!CAUTION]
-> **Bug:** The `dns` block should be optional, but it is not. See [this ticket](https://github.com/UAdelaide/CyberLab/issues/460).
+`dnssec` is ignored if `deploy: false`.
 
 ## Training options
 
