@@ -106,3 +106,25 @@ Unlike regular machines, edge routers have `instance_role: EdgeRouter` set by de
 ## 4. Host variables
 
 // TODO!!
+
+## 5. Base config dependencies
+
+```yml
+dependencies:
+  setup:          # playbook dependencies
+    - kubernetes
+  system:
+    local:        # local base config dependencies
+      - traffic
+    ext:          # external base config dependencies
+      - minibus
+```
+
+Rather confusingly, playbook dependencies are specified within a base config. They are described in more detail [here](../dependencies).
+
+Base config dependencies are divided into local and external dependencies:
+
+  - Machines from *local* dependencies will share the same subnet as your base config's machines;
+  - Machines from *external* dependencies will be given dedicated subnets.
+
+An external dependency is deployed exactly as if you had specifed it in [`aws_infrastructure/deployment_config.yml`](../../deployment/existing/) instead. Specifying it again in `deployment_config.yml` or lab config will not deploy a replica.

@@ -69,7 +69,7 @@ general:
 
 Available "general" options, their default values, and their functions are described above.
 
-`no_missing_deps` ignores the value of `auto_include`. Dependencies are further described in [Dependency playbooks](../../new/dependencies).
+`no_missing_deps` ignores the value of `auto_include`. Dependencies are further described in [Playbook dependencies](../../new/dependencies).
 
 Log levels control which logs to output:
   - `debug`/`all` - All logs

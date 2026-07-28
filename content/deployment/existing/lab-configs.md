@@ -61,3 +61,40 @@ Values are overridden following these rules:
   - Lists are concatenated (duplicate values can exist)
   - Existing dictionary keys take new values over old ones (where possible)
   - New dictionary keys are inserted with new values
+
+## Dependency config overrides
+
+> [!CAUTION]
+> The information below about overriding values of base config dependencies is a logical conclusion from other documentation. [However, it does not currently work.](https://github.com/UAdelaide/CyberLab/issues/474)
+
+[Base configs may have dependencies](../../new/base-configs). Overriding values of base config dependencies is also possible. Take, for example, a base config with the following `dependencies` block:
+
+```yml
+dependencies:
+  system:
+    local:
+      - traffic
+    ext:
+      - minibus
+```
+
+For such a base config, the lab config below would set the root disks of the traffic system server to 30 GiB, and that of the minibus booking system server to 40 GiB. Suppose the base config name is `NAME.yml`.
+
+```yml
+systems:
+  foo:
+    base_configs:
+      - file: NAME
+      - file: traffic
+        config:
+          server:
+            size: 30
+  bar:
+    base_configs:
+      - file: minibus
+        config:
+          server:
+            size: 40
+```
+
+Note the distinction between local and external base config dependencies. Each must be placed under the correct subnet block.
