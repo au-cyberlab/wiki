@@ -41,7 +41,7 @@ The term "instances" to describe machines comes from AWS "EC2 instances".
 
 A list of supported GPU models is available [here](https://docs.aws.amazon.com/ec2/latest/instancetypes/ac.html#ac_hardware) for AWS.
 
-Host variables (including the standard way of defining them) are described [later](#4-host-variables).
+Host variables (including the standard way of defining them) are described [later](#32-host-variables).
 
 ### 1.1 Machine names
 
@@ -97,15 +97,32 @@ Unlike regular machines, edge routers have `instance_role: EdgeRouter` set by de
 
 `type.aws` overrides are ignored.
 
-## 3. Environment variables
+## 3. Playbook variables
 
-// TODO!!
+Playbook variables are defined under two different blocks. They are passed to Ansible playbooks via the auto-generated Ansible inventory.
 
-## 4. Host variables
+### 3.1 System-wide variables
 
-// TODO!!
+```yml
+environment_vars:
+  something: foobar
+```
 
-## 5. Base config dependencies
+System-wide variables apply to all machines defined in the base config.
+
+### 3.2 Host-specific variables
+
+```yml
+host_vars:
+  machine1:
+    hello: world
+  machine2:
+    lorem: ipsum
+```
+
+Host-specific variables only apply to the machines under which they are specified.
+
+## 4. Base config dependencies
 
 ```yml
 dependencies:
