@@ -7,8 +7,6 @@ weight: 1
 
 A *base config* is a YAML file describing a set of machines for a particular system (e.g. a Mastodon service). Base configs reside in `aws_infrastructure/infrastructure_configs/base_configs/`.
 
-Confusingly, base configs are used for more than just describing machines. Hence their unintuitive name.
-
 > [!IMPORTANT]
 > The `instances` block is required.
 
@@ -39,7 +37,7 @@ instances:
 > [!NOTE]
 > If specifying either `ami` or `OS`, you MUST specify both. [This issue is being rectified.](https://github.com/UAdelaide/CyberLab/pull/453)
 
-The term "instances" to describe machines comes from AWS "EC2 instances". It is a regrettable mistake.
+The term "instances" to describe machines comes from AWS "EC2 instances".
 
 A list of supported GPU models is available [here](https://docs.aws.amazon.com/ec2/latest/instancetypes/ac.html#ac_hardware) for AWS.
 
@@ -120,7 +118,8 @@ dependencies:
       - minibus
 ```
 
-Rather confusingly, playbook dependencies are specified within a base config. They are described in more detail [here](../dependencies).
+> [!NOTE]
+> Playbook dependencies are also specified within a base config. They are described in more detail [here](../dependencies).
 
 Base config dependencies are divided into local and external dependencies:
 

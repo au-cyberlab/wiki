@@ -5,7 +5,7 @@ weight: 2
 
 # Playbook dependencies
 
-Commonly used playbook tasks (e.g. to set up a Kubernetes cluster) are isolated into dedicated playbooks. These playbooks can be specified as dependencies for a specific system. Unintuitively, this is done in a [base config](../base-configs):
+Commonly used playbook tasks (e.g. to set up a Kubernetes cluster) are isolated into dedicated playbooks. These playbooks can be specified as dependencies for a specific system. This is done in a [base config](../base-configs):
 
 ```yml
 dependencies:
