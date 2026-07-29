@@ -20,17 +20,25 @@ This field specifies the target backend. Currently, the value may only be `aws`.
 
 **Note:** `backend` is a required field.
 
-## AWS options
+## General options
 
 ```yml
-aws_vpc:
-  name: vpc-1234567890
+general:
+  auto_include: true      # whether to automatically include missing dependencies
+  no_missing_deps: false  # whether to abort deployment if missing dependencies
+  log_level: info         # log verbosity
 ```
 
-If `aws_vpc` does not exist or no `name` is given, the default CyberLab AWS VPC will be used.
+Available "general" options, their default values, and their functions are described above.
 
-> [!CAUTION]
-> The `aws_vpc` block is for **CyberLab admins ONLY**.
+`no_missing_deps` ignores the value of `auto_include`. Dependencies are further described in [Playbook dependencies](../../new/dependencies).
+
+Log levels control which logs to output:
+  - `debug`/`all` - All logs
+  - `info` - All logs except debug
+  - `warn` - Warnings, errors, and fatal logs
+  - `error` - Errors and fatal logs
+  - `none` - No logs
 
 ## DNS options
 
@@ -58,22 +66,14 @@ Users get a `cyberlab-USER-ssh-key.pem` instead of `cyberlab-jumpbox-ssh-key.pem
 
 The Ansible machine is still accessible via the main jumpbox for CyberLab admins.
 
-## General options
+## AWS VPC
 
 ```yml
-general:
-  auto_include: true      # whether to automatically include missing dependencies
-  no_missing_deps: false  # whether to abort deployment if missing dependencies
-  log_level: info         # log verbosity
+aws_vpc:
+  name: vpc-1234567890
 ```
 
-Available "general" options, their default values, and their functions are described above.
+If `aws_vpc` does not exist or no `name` is given, the default CyberLab AWS VPC will be used.
 
-`no_missing_deps` ignores the value of `auto_include`. Dependencies are further described in [Playbook dependencies](../../new/dependencies).
-
-Log levels control which logs to output:
-  - `debug`/`all` - All logs
-  - `info` - All logs except debug
-  - `warn` - Warnings, errors, and fatal logs
-  - `error` - Errors and fatal logs
-  - `none` - No logs
+> [!CAUTION]
+> The `aws_vpc` block is for **CyberLab admins ONLY**.
