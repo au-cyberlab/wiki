@@ -122,6 +122,9 @@ host_vars:
 
 Host-specific variables only apply to the machines under which they are specified.
 
+> [!NOTE]
+> Host-specific variables cannot be set for an edge router in the `host_vars` block.
+
 ## 4. Base config dependencies
 
 ```yml
