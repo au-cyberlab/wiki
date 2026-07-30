@@ -95,8 +95,6 @@ EdgeRouter:
 
 Unlike regular machines, edge routers have `instance_role: EdgeRouter` set by default. Other defaults are consistent with regular machines.
 
-`type.aws` overrides are ignored.
-
 ## 3. Playbook variables
 
 Playbook variables are defined under two different blocks. They are passed to Ansible playbooks via the auto-generated Ansible inventory.
