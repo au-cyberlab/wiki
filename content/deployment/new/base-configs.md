@@ -10,7 +10,9 @@ A *base config* is a YAML file describing a set of machines for a particular sys
 > [!IMPORTANT]
 > The `instances` block is required.
 
-## 1. Machines
+Base configs are also the place where [system dependencies](../system-dependencies) and [playbook variables](../playbook-vars) are defined.
+
+## 1. Regular machines
 
 Available options when describing a set of machines, as well as their functions, are described below.
 
@@ -41,7 +43,7 @@ The term "instances" to describe machines comes from AWS "EC2 instances".
 
 A list of supported GPU models is available [here](https://docs.aws.amazon.com/ec2/latest/instancetypes/ac.html#ac_hardware) for AWS.
 
-Host variables (including the standard way of defining them) are described [later](#32-host-variables).
+Host variables (including the standard way of defining them) are described in [Playbook variables](../playbook-variables).
 
 ### 1.1 Machine names
 
@@ -94,54 +96,3 @@ EdgeRouter:
 ```
 
 Unlike regular machines, edge routers have `instance_role: EdgeRouter` set by default. Other defaults are consistent with regular machines.
-
-## 3. Playbook variables
-
-Playbook variables are defined under two different blocks. They are passed to Ansible playbooks via the auto-generated Ansible inventory.
-
-### 3.1 System-wide variables
-
-```yml
-environment_vars:
-  something: foobar
-```
-
-System-wide variables apply to all machines defined in the base config.
-
-### 3.2 Host-specific variables
-
-```yml
-host_vars:
-  machine1:
-    hello: world
-  machine2:
-    lorem: ipsum
-```
-
-Host-specific variables only apply to the machines under which they are specified.
-
-> [!NOTE]
-> Host-specific variables cannot be set for an edge router in the `host_vars` block.
-
-## 4. Base config dependencies
-
-```yml
-dependencies:
-  setup:          # playbook dependencies
-    - kubernetes
-  system:
-    local:        # local base config dependencies
-      - traffic
-    ext:          # external base config dependencies
-      - minibus
-```
-
-> [!NOTE]
-> Playbook dependencies are also specified within a base config. They are described in more detail [here](../dependencies).
-
-Base config dependencies are divided into local and external dependencies:
-
-  - Machines from *local* dependencies will share the same subnet as your base config's machines;
-  - Machines from *external* dependencies will be given dedicated subnets.
-
-An external dependency is deployed exactly as if you had specifed it in [`aws_infrastructure/deployment_config.yml`](../../deployment/existing/) instead. Specifying it again in `deployment_config.yml` or lab config will not deploy a replica.

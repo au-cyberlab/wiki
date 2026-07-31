@@ -1,6 +1,6 @@
 ---
 title: Ansible playbooks
-weight: 2
+weight: 3
 ---
 
 # Ansible playbooks

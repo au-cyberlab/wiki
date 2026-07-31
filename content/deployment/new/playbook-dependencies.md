@@ -1,6 +1,6 @@
 ---
 title: Playbook dependencies
-weight: 3
+weight: 4
 ---
 
 # Playbook dependencies
@@ -40,7 +40,6 @@ If you specify playbook dependencies, your system's playbook will likely need to
         time: 1200  # default timeout between retries, in seconds
 ```
 
-Usually this block appears near the top of a playbook, just before software setup tasks begin. `vars` is usually omitted, unless overriding values.
+**Note:** 1200 seconds is 20 minutes.
 
-// TODO!!
-- Referred to by Deployment > Existing systems > Deploy options > General options
+Usually this block appears near the top of a playbook, just before software setup tasks begin. `vars` is usually omitted, unless overriding values.

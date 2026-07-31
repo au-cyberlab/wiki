@@ -31,7 +31,9 @@ general:
 
 Available "general" options, their default values, and their functions are described above.
 
-`no_missing_deps` ignores the value of `auto_include`. Dependencies are further described in [Playbook dependencies](../../new/dependencies).
+[System dependencies](../../new/system-dependencies) specify which other systems must be deployed alongside the system to function. A "missing" dependency is thus a system that has been declared as a dependency, but not included in the deployment config. The `auto_include` option removes the need to specify dependencies again in the deployment config.
+
+`no_missing_deps` ignores the value of `auto_include` (i.e. forces dependencies to be specified again in the deployment config).
 
 Log levels control which logs to output:
   - `debug`/`all` - All logs

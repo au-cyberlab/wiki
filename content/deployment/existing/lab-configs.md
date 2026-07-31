@@ -67,7 +67,7 @@ Values are overridden following these rules:
 > [!CAUTION]
 > The information below about overriding values of base config dependencies is a logical conclusion from other documentation. [However, it does not currently work.](https://github.com/UAdelaide/CyberLab/issues/474)
 
-[Base configs may have dependencies](../../new/base-configs). Overriding values of base config dependencies is also possible. Take, for example, a base config with the following `dependencies` block:
+[Base configs may have dependencies](../../new/system-dependencies). Overriding values of base config dependencies is also possible. Take, for example, a base config with the following `dependencies` block:
 
 ```yml
 dependencies:
