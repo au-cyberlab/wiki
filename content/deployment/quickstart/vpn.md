@@ -5,7 +5,7 @@ weight: 1
 
 # Access via VPN
 
-[Quickstart](../quickstart/) described CyberLab access via SSH. However, when interacting with websites in the CyberLab, using SSH is inconvenient.
+[Quickstart](../quickstart/) described CyberLab access via SSH. However, when interacting with *websites* in the CyberLab, using SSH is inconvenient.
 
 An alternative way to access the CyberLab is via a [Wireguard](https://en.wikipedia.org/wiki/WireGuard) [VPN](https://en.wikipedia.org/wiki/Virtual_private_network).
 
@@ -18,7 +18,7 @@ An alternative way to access the CyberLab is via a [Wireguard](https://en.wikipe
 1. Install Wireguard ([see instructions](https://www.wireguard.com/install/))
 2. Download and unzip the Cluster Artifacts (as in [Quickstart](../quickstart/))
 3. In the unzipped artifacts, you will find `vpn/cyberlab-<user>.conf` where `<user>` is your GitHub username.
-4. Copy this config file to `/etc/wireguard/<interface>.conf`
+4. Copy that config file to `/etc/wireguard/<interface>.conf`
      - `<interface>` is the name of the virtual Wireguard interface you will activate.
      - Conventionally named `wg0`.
      - If you already have a `wg0` interface configured, you can use `wg1`, and so on.
