@@ -1,6 +1,7 @@
 ---
 title: Quickstart
 weight: 1
+bookCollapseSection: true
 ---
 
 # Quickstart
