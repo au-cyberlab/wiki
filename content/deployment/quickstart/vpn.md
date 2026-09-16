@@ -9,9 +9,7 @@ weight: 1
 
 An alternative way to access the CyberLab is via a [Wireguard](https://en.wikipedia.org/wiki/WireGuard) [VPN](https://en.wikipedia.org/wiki/Virtual_private_network).
 
-## 1. Command-line setup
-
-*(These instructions assume a Linux environment)*
+## Setup on Linux (CLI)
 
 ### Connecting to VPN
 
@@ -28,7 +26,7 @@ An alternative way to access the CyberLab is via a [Wireguard](https://en.wikipe
 
 1. Run `wg-quick down <interface>` to deactivate your Wireguard interface.
 
-## 2. Accessing hosts
+## Accessing hosts
 
 When connected via VPN, you can access CyberLab machines directly by their IP address or DNS domain name.
 
