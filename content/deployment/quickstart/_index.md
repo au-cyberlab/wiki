@@ -14,7 +14,7 @@ Open the [CyberLab repository][3] and navigate to **Actions > Deploy dev AWS env
 
 ![CyberLab deploy workflow](../../images/deploy-branch.png)
 
-Within 8-12 minutes, the deploy workflow should complete. **Do NOT cancel a running deployment.**
+Within 10-15 minutes, the deploy workflow should complete. **Do NOT cancel a running deployment.**
 
 **Note:** The workflow completes after the *machines and network* are set up. This does not mean all the software has been deployed to the machines. Software is deployed with Ansible; you can check if deployment is complete by [checking the Ansible logs](#23-checking-deployment-status) (section 2.3).
 
@@ -26,7 +26,7 @@ Click on the workflow run you started.
 
 ![CyberLab deploy workflow](../../images/workflow-done.png)
 
-At the bottom of the page are the **Cluster Artifacts**. Download them and unzip them. You should find the following files, where BRANCH is the name of the branch you deployed:
+At the bottom of the page are the **Cluster Artifacts**. Download them and unzip them. You should find the following files, where BRANCH is the name of the branch you deployed, and USER is your GitHub username:
 
 ```
 artifacts/
@@ -34,11 +34,15 @@ artifacts/
   ├── cyberlab-BRANCH-ansible-key-public.pem
   ├── cyberlab-BRANCH-key.pem
   ├── cyberlab-BRANCH-key-public.pem
+  ├── cyberlab-BRANCH-rsa-key.pem
+  ├── cyberlab-BRANCH-rsa-key-public.pem
   ├── cyberlab-jumpbox-ssh-key.pem
   ├── cyberlab-jumpbox-ssh-key-public.pem
   ├── .gitkeep
   ├── NetworkMap.png
-  └── sops-age-secret.yaml
+  ├── sops-age-secret.yaml
+  └── vpn
+      └── cyberlab-USER.conf
 ```
 
 In the center of the workflow page, there is an **SSH command**:
