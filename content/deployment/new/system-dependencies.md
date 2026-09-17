@@ -5,6 +5,9 @@ weight: 2
 
 # System dependencies
 
+> [!CAUTION]
+> This page does not yet reflect some recent major CyberLab changes. We are working to fix this.
+
 One system may require another system be deployed alongside it to function. Required dependencies can be declared using a `dependencies` block in a [base config](../base-configs):
 
 ```yml

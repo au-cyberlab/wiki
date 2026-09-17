@@ -5,6 +5,9 @@ weight: 2
 
 # Playbook batches
 
+> [!CAUTION]
+> This page does not yet reflect some recent major CyberLab changes. We are working to fix this.
+
 `ansible/playbooks/plays_to_run.yml` is structured around *batches* of playbooks:
 
 ```yaml

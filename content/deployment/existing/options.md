@@ -5,6 +5,9 @@ weight: 3
 
 # Deploy options
 
+> [!CAUTION]
+> This page does not yet reflect some recent major CyberLab changes. We are working to fix this.
+
 Aside from selecting systems and scenarios to deploy, `aws_infrastructure/deployment_config.yml` provides options to customise deployment.
 
 > [!IMPORTANT]

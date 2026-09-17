@@ -5,6 +5,9 @@ weight: 4
 
 # Playbook dependencies
 
+> [!CAUTION]
+> This page does not yet reflect some recent major CyberLab changes. We are working to fix this.
+
 Commonly used playbook tasks (e.g. to set up a Kubernetes cluster) are isolated into dedicated playbooks. These playbooks can be specified as dependencies for a specific system. This is done in a [base config](../base-configs):
 
 ```yml

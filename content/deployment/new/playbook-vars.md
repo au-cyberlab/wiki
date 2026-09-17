@@ -5,6 +5,9 @@ weight: 5
 
 # Playbook variables
 
+> [!CAUTION]
+> This page does not yet reflect some recent major CyberLab changes. We are working to fix this.
+
 Playbook variables are defined under two different blocks in a [base config](../base-configs). They are passed to Ansible playbooks via the auto-generated Ansible inventory.
 
 ### System-wide variables

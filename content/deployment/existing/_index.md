@@ -6,6 +6,9 @@ bookCollapseSection: true
 
 # Existing systems
 
+> [!CAUTION]
+> This page does not yet reflect some recent major CyberLab changes. We are working to fix this.
+
 [Quickstart](../quickstart/) explains deployment of a pre-configured cyber range. If you want different systems, or different scenarios, you must create your own branch (from `main`).
 
 > [!NOTE]

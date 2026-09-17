@@ -5,6 +5,9 @@ weight: 3
 
 # Ansible playbooks
 
+> [!CAUTION]
+> This page does not yet reflect some recent major CyberLab changes. We are working to fix this.
+
 Ansible playbooks deploy software onto CyberLab machines. They reside in `ansible/playbooks/`.
 
 ## Context

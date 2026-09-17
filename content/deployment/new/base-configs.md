@@ -5,6 +5,9 @@ weight: 1
 
 # Base configs
 
+> [!CAUTION]
+> This page does not yet reflect some recent major CyberLab changes. We are working to fix this.
+
 A *base config* is a YAML file describing a set of machines for a particular system (e.g. a Mastodon service). Base configs reside in `aws_infrastructure/infrastructure_configs/base_configs/`.
 
 > [!IMPORTANT]
