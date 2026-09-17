@@ -26,6 +26,19 @@ An alternative way to access the CyberLab is via a [Wireguard](https://en.wikipe
 
 1. Run `wg-quick down <interface>` to deactivate your Wireguard interface.
 
+## Setup on macOS/Windows (GUI)
+
+### Connecting to VPN
+
+1. Follow steps 1-3 from the Setup for Linux (above).
+2. Open the Wireguard app, click **Import tunnel(s) from file**.
+3. Select the `.conf` file.
+4. There will be an **Activate** button. Click it to connect to the VPN.
+
+### Disconnecting from VPN
+
+1. Click **Deactivate** to disconnect from the VPN.
+
 ## Accessing hosts
 
 When connected via VPN, you can access CyberLab machines directly by their IP address or DNS domain name.
