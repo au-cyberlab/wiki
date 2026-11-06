@@ -102,8 +102,8 @@ Finally, under `playbooks`, we have a `deploy.yml`. Playbooks in modules are str
 For cleanliness, and code tidiness, we prefer to keep Ansible templates in a `templates` folder under the `playbooks` directory. This makes it easy to navigate.
 Any source code should go in the `src` folder in the root of your module folder.
  
-[1][./installers/_index.md]
-[2][./systems/_index.md]
-[3][./patches/_index.md]
-[4][https://docs.ansible.com/projects/ansible/latest/index.html]
-[5][../deployment/new/_index.md]
+[1]: ./installers/_index.md
+[2]: ./systems/_index.md
+[3]: ./patches/_index.md
+[4]: https://docs.ansible.com/projects/ansible/latest/index.html
+[5]: ../deployment/new/_index.md

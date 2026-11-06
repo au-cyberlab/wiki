@@ -47,5 +47,5 @@ You can read more about Kubernetes [here][1].
 
 You can also read more about K9S [here][2].
 
-[1][https://kubernetes.io/docs/home/]
-[2][https://k9scli.io/]
+[1]: https://kubernetes.io/docs/home/
+[2]: https://k9scli.io/

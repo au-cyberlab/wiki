@@ -17,4 +17,4 @@ dependencies:
 
 For more information on Docker, you can read the documentation [here][1].
 
-[1][https://docs.docker.com/]
+[1]: https://docs.docker.com/

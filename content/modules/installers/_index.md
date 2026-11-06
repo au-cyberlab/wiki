@@ -1,5 +1,5 @@
 ---
-title: Installer Modules
+title: Installers
 weight: 1
 bookCollapseSection: true
 ---
