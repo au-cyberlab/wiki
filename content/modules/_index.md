@@ -78,7 +78,13 @@ We supply a version for the module (currently CyberLab does not support versioni
 
 Kinds are of the type listed above, and change the files required for a module to function properly.
 
-Finally, `dependencies` allow us to specify modules to deploy before and/or after the system is deployed, and is also how we supply packages to install through package managers like `apt` or `yum`.
+Finally, `dependencies` allow us to specify modules to deploy in addition to the system, and is also how we supply packages to install through package managers like `apt` or `yum`. 
+
+Playbooks to deploy each of these are run in the following order:
+ 1. `package`
+ 2. `installer`
+ 3. `system`
+ 4. `patch`
 
 The `installer` field specifies modules to be run before the system. Typically, these modules are the common setup steps for systems, such as setting up docker or copying over the source files.
 
@@ -92,7 +98,9 @@ For more information on how each of these kinds of modules are specified, head t
  - [Systems][2]
  - [Patches][3]
 
-
+Finally, under `playbooks`, we have a `deploy.yml`. Playbooks in modules are strictly kept as lists of tasks - that is, there is no host portion. When the module is deployed, the host portion is populated automatically for each system and as such we are able to abstract it away from `modules`.
+For cleanliness, and code tidiness, we prefer to keep Ansible templates in a `templates` folder under the `playbooks` directory. This makes it easy to navigate.
+Any source code should go in the `src` folder in the root of your module folder.
  
 [1][./installers/_index.md]
 [2][./systems/_index.md]
