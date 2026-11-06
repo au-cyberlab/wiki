@@ -1,3 +1,6 @@
+---
+weight: 1
+---
 # Overview
 
 The Battery System is a core critical component of the CyberLab Core System. It tracks charge

@@ -1,3 +1,6 @@
+---
+weight: 2
+---
 # Overview
 
 The Security Operations Center (SOC) environment has two primary components.

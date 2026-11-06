@@ -1,3 +1,6 @@
+---
+weight: 1
+---
 # Overview
 
 The Hospital system is implemented by [OpenEMR][1] — a medical practice

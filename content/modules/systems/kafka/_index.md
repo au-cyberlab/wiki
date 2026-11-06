@@ -1,7 +1,7 @@
 ---
 title: Kafka
 weight: 1
-bookCollapseSection: false
+bookCollapseSection: true
 ---
 
 Kafka is a system that allows for messages to be passed between different systems.

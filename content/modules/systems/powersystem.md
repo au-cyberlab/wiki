@@ -1,5 +1,6 @@
 ---
 title: Power System
+weight: 2
 ---
 
 # Overview

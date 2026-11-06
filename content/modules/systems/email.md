@@ -1,3 +1,6 @@
+---
+weight: 1
+---
 The email system is implemented by [Mailcow][1] — an open-source, Docker-based
 mail server suite. It bundles Postfix for sending emails, Dovecot for receiving
 emails, and SOGo for webmail.

@@ -1,3 +1,6 @@
+---
+weight: 2
+---
 # Overview
 
 The [Mastodon][1] system is an open-source social media platform. Its interface

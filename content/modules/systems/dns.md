@@ -1,3 +1,6 @@
+---
+weight: 1
+---
 # Overview
 
 DNS is a system which binds hostnames or URIs to IPs. Ansible will set up most of this automatically but there are some things that need to be configured before deploying.

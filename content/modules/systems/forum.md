@@ -1,3 +1,6 @@
+---
+weight: 1
+---
 # Overview
 
 This is a very simple pin board looking form that lets users make posts and lets others reply to that post. There is no auth and you just need to add in a display username.
