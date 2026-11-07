@@ -10,7 +10,7 @@ and bugs for educational purposes.
 
 ## 1. Setup
 
-To deploy the email system, add `minibus` to a lab configuration that is being deployed or your `deployment_config.yml` file.
+To deploy this system, add `minibus` to a lab configuration that is being deployed or your `deployment_config.yml` file.
 
 ## 2. Usage
 

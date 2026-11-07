@@ -1,4 +1,5 @@
 ---
+title: Wazuh
 weight: 2
 ---
 # Overview
@@ -45,7 +46,6 @@ You can overwrite these in a lab configuration. Do **NOT** overwrite them direct
 The wazuh dashboard is exposed on port `30000`.
 
 ```bash
-
 # for AWS
 ssh -L 8000:<WAZUH_MACHINE_IP>:30000 -i cyberlab-jumpbox-ssh-key.pem <CYBERLAB_USER>@<JUMPBOX_IP>
 ```

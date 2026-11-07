@@ -14,7 +14,7 @@ documentation.
 
 ## 1. Setup
 
-To deploy the email system, add `mastodon` to a lab configuration that is being deployed or your `deployment_config.yml` file.
+To deploy this system, add `mastodon` to a lab configuration that is being deployed or your `deployment_config.yml` file.
 
 ## 2. Usage
 
